@@ -1,0 +1,31 @@
+{
+    "name": "dynamic/silverstripe-payment-paypal",
+    "description": "SilverStripe PayPal payment module",
+    "type": "silverstripe-module",
+    "homepage": "http://silverstripe.org",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "silverstripe",
+        "PayPal"
+    ],
+    "require": {
+        "silverstripe/cms": "^4@dev"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "~4.8"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        },
+        "installer-name": "payment-paypal"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dynamic\\PaymentPayPal\\": "code/",
+            "SilverStripe\\PaymentPayPal\\Tests\\": "tests/php/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
